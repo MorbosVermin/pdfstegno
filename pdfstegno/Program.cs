@@ -12,7 +12,7 @@ namespace pdfstegno
         /// <summary>
         /// TODO - No worky! :(
         /// 
-        /// I initially used code from Dieder Stevens to create a PDF file, however this does not
+        /// I initially used code from Didier Stevens to create a PDF file, however this does not
         /// seem to be working now with modern PDF readers. 
         /// </summary>
         /// <param name="path"></param>
@@ -32,7 +32,7 @@ namespace pdfstegno
         /// <summary>
         /// Given a source (PDF) file, a destination, a name for referencing the payload within the PDF, and
         /// finally a executable path (payload), we open the source PDF, recalucate the xref with the 
-        /// payload and inject the payload into the PDF which is written to destionation. 
+        /// payload and inject the payload into the PDF which is written to destination. 
         /// </summary>
         /// <param name="source">Source PDF file.</param>
         /// <param name="destination">Destination PDF file.</param>
@@ -195,7 +195,7 @@ namespace pdfstegno
         /// </summary>
         static void Help()
         {
-            Console.WriteLine("PDF Stegnography Tool");
+            Console.WriteLine("PDF Steganography Tool");
             Console.WriteLine();
             Console.WriteLine("Syntax: {0} <path to .pdf file> [-o <destination>] [-x <payload>] [-n <ref name>] [-e]",
                 Path.GetFileName(Process.GetCurrentProcess().MainModule.FileName));
